@@ -15,3 +15,11 @@ cd common-config
 ./install.sh
 ```
 
+
+## Contents
+
+* [Browser Extensions](browser-extensions) - list of browser extensions that we have found to be useful
+* [fonts](fonts) - collection of fonts that we like for programming
+
+
+
