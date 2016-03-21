@@ -1,5 +1,8 @@
 # Linux aliases
 alias alf='ls -alF'
+cs(){ cd $1 && ls; }
+# Usage: "find_non_ascii maybe_contains_some_non_ascii_characters.txt"
+alias find_non_ascii="perl -ne 'print \"\$. \$_\" if m/[\x80-\xFF]/'"
 
 # Git aliases
 alias g='git'
@@ -50,4 +53,3 @@ alias drdangle='docker rmi -f $(docker images -f "dangling=true" -q); docker rm 
 Time12ampm="\$(date +%I:%M)"
 GIT_PROMPT_END_USER=" \n${BoldBlue}${Time12ampm}${ResetColor} $ "
 GIT_PROMPT_END_ROOT=" \n${BoldBlue}${Time12ampm}${ResetColor} # "
-
