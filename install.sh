@@ -9,7 +9,10 @@ echo
 echo "cloning $os-config repository to ~/$os-config"...
 git clone https://github.com/quantum-media-tech/$os-config.git ~/$os-config
 
-# Add sourcing for common-config 
+# Download Git completion script
+curl -LSso ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+
+# Add sourcing for common-config
 echo "source ~/common-config/bash_profile" >> ~/.bash_profile
 echo "source ~/common-config/vimrc" >> ~/.vimrc
 
@@ -20,7 +23,7 @@ echo "source ~/$os-config/vimrc" >> ~/.vimrc
 # Make folder for loading additional libraries
 mkdir libs
 
-# Clone and source bash-git-prompt (https://github.com/magicmonty/bash-git-prompt)  
+# Clone and source bash-git-prompt (https://github.com/magicmonty/bash-git-prompt)
 git clone https://github.com/magicmonty/bash-git-prompt.git libs/bash-git-prompt
 echo "source ~/common-config/libs/bash-git-prompt/gitprompt.sh" >> ~/.bash_profile
 
@@ -42,4 +45,3 @@ source ~/.bash_profile
 echo "-------------------------------------------------------"
 echo "Restart your terminal for configuration to take effect."
 echo "-------------------------------------------------------"
-
