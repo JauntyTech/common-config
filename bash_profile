@@ -48,6 +48,7 @@ alias gshp='git stash -p'
 
 # Docker aliases
 alias di='docker images'
+alias dm='docker-machine'
 alias drdangle='docker rmi -f $(docker images -f "dangling=true" -q); docker rm -v $(docker ps -a -q -f status=exited)'
 
 Time12ampm="\$(date +%I:%M)"
