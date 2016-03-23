@@ -90,6 +90,7 @@ __git_complete gshp _git_stash
 alias di='docker images'
 alias dm='docker-machine'
 alias drdangle='docker rmi -f $(docker images -f "dangling=true" -q); docker rm -v $(docker ps -a -q -f status=exited)'
+dockergo(){ docker-machine start $1 && eval $(docker-machine env $1); }
 
 Time12ampm="\$(date +%I:%M)"
 GIT_PROMPT_END_USER=" \n${BoldBlue}${Time12ampm}${ResetColor} $ "
