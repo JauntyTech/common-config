@@ -21,10 +21,10 @@ echo "source ~/$os-config/bash_profile" >> ~/.bash_profile
 echo "source ~/$os-config/vimrc" >> ~/.vimrc
 
 # Make folder for loading additional libraries
-mkdir libs
+mkdir ~/common-config/libs
 
 # Clone and source bash-git-prompt (https://github.com/magicmonty/bash-git-prompt)
-git clone https://github.com/magicmonty/bash-git-prompt.git libs/bash-git-prompt
+git clone https://github.com/magicmonty/bash-git-prompt.git ~/common-config/libs/bash-git-prompt
 echo "source ~/common-config/libs/bash-git-prompt/gitprompt.sh" >> ~/.bash_profile
 
 # Install Pathogen
