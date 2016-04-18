@@ -20,3 +20,10 @@ set ruler
 imap jj <Esc>
 
 let g:vim_markdown_folding_style_pythonic = 1
+
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
