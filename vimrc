@@ -12,6 +12,9 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+" Allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
 set relativenumber
 set number
 
