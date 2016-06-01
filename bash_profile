@@ -93,6 +93,11 @@ alias dm='docker-machine'
 alias drdangle='docker rmi -f $(docker images -f "dangling=true" -q); docker rm -v $(docker ps -a -q -f status=exited)'
 dockergo(){ docker-machine start $1 && eval $(docker-machine env $1); }
 
+# Misc aliases
+alias venv27='virtualenv -p $(which python2.7) venv'
+alias venv34='virtualenv -p $(which python3.4) venv'
+alias venv35='virtualenv -p $(which python3.5) venv'
+
 Time12ampm="\$(date +%I:%M)"
 GIT_PROMPT_END_USER=" \n${BoldBlue}${Time12ampm}${ResetColor} $ "
 GIT_PROMPT_END_ROOT=" \n${BoldBlue}${Time12ampm}${ResetColor} # "
