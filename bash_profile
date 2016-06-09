@@ -98,6 +98,13 @@ alias venv27='virtualenv -p $(which python2.7) venv'
 alias venv34='virtualenv -p $(which python3.4) venv'
 alias venv35='virtualenv -p $(which python3.5) venv'
 
+# generator-react-webpack-redux (https://github.com/stylesuxx/generator-react-webpack-redux)
+alias yo-project='yo react-webpack-redux'
+alias yo-action='yo react-webpack-redux:action'
+alias yo-component='yo react-webpack-redux:component'
+alias yo-container='yo react-webpack-redux:container'
+alias yo-reducer='yo react-webpack-redux:reducer'
+
 Time12ampm="\$(date +%I:%M)"
 GIT_PROMPT_END_USER=" \n${BoldBlue}${Time12ampm}${ResetColor} $ "
 GIT_PROMPT_END_ROOT=" \n${BoldBlue}${Time12ampm}${ResetColor} # "
