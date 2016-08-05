@@ -98,6 +98,8 @@ alias venv27='virtualenv -p $(which python2.7) venv'
 alias venv34='virtualenv -p $(which python3.4) venv'
 alias venv35='virtualenv -p $(which python3.5) venv'
 
+alias lambda-zip='zip -r ~/Desktop/lambda.zip *'
+
 # generator-react-webpack-redux (https://github.com/stylesuxx/generator-react-webpack-redux)
 alias yo-project='yo react-webpack-redux'
 alias yo-action='yo react-webpack-redux:action'
