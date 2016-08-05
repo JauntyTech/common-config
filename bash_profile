@@ -98,6 +98,8 @@ dockergo(){ docker-machine start $1 && eval $(docker-machine env $1); }
 alias venv27='virtualenv -p $(which python2.7) venv'
 alias venv34='virtualenv -p $(which python3.4) venv'
 alias venv35='virtualenv -p $(which python3.5) venv'
+alias venvon='source venv/bin/activate'
+alias venvoff='deactivate'
 
 alias lambda-zip='zip -r ~/Desktop/lambda.zip *'
 
