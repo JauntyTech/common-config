@@ -1,6 +1,7 @@
 # Linux aliases
 alias alf='ls -alF'
 cs(){ cd $1 && ls; }
+mkcd(){ mkdir $1 && cd $1; }
 # Usage: "find_non_ascii maybe_contains_some_non_ascii_characters.txt"
 alias find_non_ascii="perl -ne 'print \"\$. \$_\" if m/[\x80-\xFF]/'"
 
