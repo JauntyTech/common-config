@@ -102,7 +102,7 @@ alias venvon='source venv/bin/activate'
 alias venvoff='deactivate'
 
 alias lambda-zip='zip -r ~/Desktop/lambda.zip *'
-
+ 
 # generator-react-webpack-redux (https://github.com/stylesuxx/generator-react-webpack-redux)
 alias yo-project='yo react-webpack-redux'
 alias yo-action='yo react-webpack-redux:action'
@@ -113,3 +113,7 @@ alias yo-reducer='yo react-webpack-redux:reducer'
 Time12ampm="\$(date +%I:%M)"
 GIT_PROMPT_END_USER=" \n${BoldBlue}${Time12ampm}${ResetColor} $ "
 GIT_PROMPT_END_ROOT=" \n${BoldBlue}${Time12ampm}${ResetColor} # "
+
+# Enable AWS autocomplete
+complete -C '/usr/local/aws/bin/aws_completer' aws
+
