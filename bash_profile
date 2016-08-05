@@ -115,5 +115,5 @@ GIT_PROMPT_END_USER=" \n${BoldBlue}${Time12ampm}${ResetColor} $ "
 GIT_PROMPT_END_ROOT=" \n${BoldBlue}${Time12ampm}${ResetColor} # "
 
 # Enable AWS autocomplete
-complete -C '/usr/local/aws/bin/aws_completer' aws
+complete -C $(which aws_completer) aws
 
