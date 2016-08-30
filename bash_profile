@@ -117,3 +117,5 @@ GIT_PROMPT_END_ROOT=" \n${BoldBlue}${Time12ampm}${ResetColor} # "
 # Enable AWS autocomplete
 complete -C $(which aws_completer) aws
 
+# Login to Amazon ECR for us-east-1
+alias ecr-login="aws ecr get-login --region us-east-1"
