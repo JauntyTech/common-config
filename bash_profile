@@ -1,5 +1,6 @@
 # Linux aliases
 alias alf='ls -alF'
+alias alfr='ls -alFR'
 cs(){ cd $1 && ls; }
 mkcd(){ mkdir $1 && cd $1; }
 # Usage: "find_non_ascii maybe_contains_some_non_ascii_characters.txt"
