@@ -120,3 +120,6 @@ complete -C $(which aws_completer) aws
 
 # Login to Amazon ECR for us-east-1
 alias ecr-login='eval "$(aws ecr get-login --region us-east-1)"'
+
+# Install package globally (throughout computer) with npm
+alias npmig='sudo npm install -g'
