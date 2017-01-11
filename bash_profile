@@ -123,3 +123,7 @@ alias ecr-login='eval "$(aws ecr get-login --region us-east-1)"'
 
 # Install package globally (throughout computer) with npm
 alias npmig='sudo npm install -g'
+
+# Get my IP address
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
