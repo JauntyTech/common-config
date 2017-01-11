@@ -89,6 +89,9 @@ __git_complete gsha _git_stash
 __git_complete gshl _git_stash
 __git_complete gshp _git_stash
 
+# Additional git aliases
+alias gitblown='gitk --all $( git fsck --no-reflog | awk '"'"'/dangling commit/ {print $3}'"'"' )'
+
 # Docker aliases
 alias di='docker images'
 alias dm='docker-machine'
