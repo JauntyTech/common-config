@@ -131,3 +131,5 @@ alias npmig='sudo npm install -g'
 # Get my IP address
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
+# Run portainer for managing and monitoring docker containers
+alias portainer='docker run -d -p 9000:9000 -v "/var/run/docker.sock:/var/run/docker.sock" portainer/portainer'
