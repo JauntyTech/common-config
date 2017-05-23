@@ -22,4 +22,6 @@ cd common-config
 * [fonts](fonts) - collection of fonts that we like for programming
 
 
+## AWS Alias
 
+To use the AWS alias file (`alias`), place it at the following path, creating any folders that don't exist along the way: `~/.aws/cli/alias
